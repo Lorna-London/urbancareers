@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --padding: 3%;
+}
+
+.body {
+    height: 100vh;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: 120px 450px auto 200px 200px auto;
+}
+
+.mission, .section-about, .section-jobs, .section-forum {
+    padding: var(--padding);    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 6;
+    background-color: rgb(51, 51, 61);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+.logo-container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2rem;
+}
+
+.logo-img {
+    width: 7rem;
+    height: auto;
+}
+
+.nav {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav ul {
+    display: inline-flex;
+    gap: 60px;
+    list-style-type: none;
+    margin-top: 15%;
+}
+
+.fa-bars {
+    color: white;
+    visibility: hidden;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.main { 
+    position: relative;
+    grid-column: span 6;
+    background-image: url(images/careerspic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(51, 51, 61);
+    padding-bottom: 10%;
+}
+
+.mission {
+    top: -1%;
+    position: absolute;
+    color: black;
+    font-size: 3rem;
+}
+
+.job-news-btn {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    padding: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: coral;
+    color: black;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.section-about {
+    grid-column: span 2;
+    background-color: rgb(51, 51, 61);
+    color: white;
+}
+
+.section-jobs {
+    grid-column: span 3;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.section-forum {
+    grid-column: span 2;
+    background-color: coral;
+}
+
+.footer {
+    grid-column: span 6;
+    background-color: rgb(51, 51, 61);
+}
+
+@media screen and (max-width: 768px) {
+ .nav ul {
+    display: none;
+ }
+ .fa-bars {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    visibility: visible;
+ }
+ .main {
+    height: 567px;
+ }
+}
+
+
+@media screen and (max-width: 768px) { 
+    .body {
+        display: block;
+           background-color: rgb(51, 51, 61);
+    }
+    .header {
+        padding-top: 6%;
+        padding-bottom: 6%; 
+    }
+    .logo-img {
+        width: 4rem;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    .nav ul {
+        display: none;
+     }
+     .fa-bars {
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        visibility: visible;
+     }
+    .main {
+        background-blend-mode: soft-light;
+    }
+    .mission {
+        width: 300px;
+        margin-top: 5%;
+        font-size: 3rem;
+        color: ghostwhite;
+    }
+    .job-news-btn {
+        top: 50%;
+        padding: 4%;
+    }
+
+}
