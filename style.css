@@ -15,8 +15,7 @@
     grid-template-rows: 120px 450px auto auto auto auto;
 }
 
-.mission, .section-about, .section-jobs, .section-forum {
-    text-align: center;   
+.mission, .section-about, .section-jobs, .section-forum .footer {
     padding: var(--padding);
 }
 
@@ -62,6 +61,11 @@
     margin-top: 15%;
 }
 
+.nav ul li:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 1%;
+}
+
 .fa-bars {
     color: white;
     visibility: hidden;
@@ -85,6 +89,7 @@
     position: absolute;
     color: black;
     font-size: 3rem;
+    text-align: left;
 }
 
 .job-news-btn {
@@ -112,7 +117,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-  
 }
 
 .cards {
@@ -158,11 +162,16 @@
     height: auto;
     grid-column: span 6;
     background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .footer {
     height: auto;
     grid-column: span 6;
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(51, 51, 61);
 }
 
@@ -225,7 +234,7 @@
         display: block;
     }
     .cards {
-      
+        padding-top: 7%;
         margin: 2%;
     }
 
