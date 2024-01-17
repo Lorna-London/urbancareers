@@ -119,9 +119,13 @@
     gap: 2%;
 }
 
+.section-about p {
+    padding-bottom: 5%;
+}
+
 .cards {
-    width: 350px;
-    height: 200px;
+    width: 32%;
+    height: auto;
     grid-column: 6;
     display: inline-block;
     text-align: center;
@@ -189,9 +193,17 @@
     position: relative;
  }
 
+ .section-about {
+    display: block;
+ }
+ .cards {
+    width: 100%;
+    margin-bottom: 3%;
+ }
 
 
-@media screen and (max-width: 768px) { 
+
+@media screen and (max-width: 600px) { 
     .body {
         display: block;
         background-color: rgb(51, 51, 61);
@@ -235,7 +247,7 @@
     }
     .cards {
         padding-top: 7%;
-        margin: 2%;
+        margin-right: 2%;
     }
 
     }
