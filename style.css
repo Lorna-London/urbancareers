@@ -11,11 +11,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    grid-template-columns: repeat(6 1fr);
-    grid-template-rows: 120px 450px auto auto auto auto;
+    grid-template-columns: repeat(7 1fr);
+    grid-template-rows: 120px 450px auto auto auto auto auto;
 }
 
-.mission, .section-about, .section-jobs, .section-forum .footer {
+.mission, .section-about, .section-forum .footer {
     padding: var(--padding);
 }
 
@@ -69,7 +69,7 @@
 .fa-bars {
     color: white;
     visibility: hidden;
-    font-size: 2rem;
+    font-size: 1.5rem;
     z-index: 1;
 }
 
@@ -117,6 +117,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
+    /*padding-bottom:  10%;*/
 }
 
 .section-about p {
@@ -139,7 +140,7 @@
     color: lightblue;
 }
 
-.cards i, h2, p {
+.cards i, h2 {
     padding-bottom: 5%;
 }
 
@@ -151,15 +152,77 @@
 .section-jobs {
     height: auto;
     grid-column: span 6;
-    background-color: ghostwhite;
+    background-color: white;
     color: black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
-.jobs-container {
-    width: 500px;
+.section-jobs-container {
+    width: 550px;
     height: 300px;
+    padding: 5%;
+    border-radius: 3px;
+}
+
+.section-jobs input {
+    width: 300px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+}
+
+.section-jobs label {
+    color: transparent;
+}
+
+.section-jobs input::placeholder {
+    color: grey;
+    font-weight: bold;
+}
+
+.section-jobs p {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.3rem;
+    color: rgb(51, 51, 61);
+    padding: 2%;
+}
+
+.section-jobs div:nth-of-type(1) {
+    height: auto;   
+}
+
+.advert-icon {
+    font-size: 12rem;    
+    color: black;
+}
+
+.section-jobs div:nth-of-type(2) {
+    width: auto;
+    height: auto;
+    background-color: rgb(51, 51, 61); /*aliceblue*/
+    color: whitesmoke;
+}
+
+.section-interviews {
+    height: auto;
+    background-color: seashell;
+}
+
+.interviews-container {
+    height: 100vh;
+    
 }
 
 .section-forum {
@@ -168,7 +231,47 @@
     background-color: coral;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 60px;
+    color: black;
+    padding-top: 8%;
+    padding-bottom: 20%;
+}
+
+.forum-container {
+    width: 250px;
+    height: auto;
+}
+
+.forum-container h3 {
+    color: black;
+    margin-bottom: 5%;
+}
+
+.forum-categories {
+    list-style-type: none;
+}
+
+/*.search-btn {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: whitesmoke;
+}*/
+
+.sign-in-btn {
+    padding: 5% 15%;
+    border: 1px solid black;
+    border-radius: 24px;
+    background-color: transparent;
+}
+
+.articles {
+    list-style-type: none;
+}
+
+.articles li a {
+    color: black;
 }
 
 .footer {
@@ -177,6 +280,14 @@
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(51, 51, 61);
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.footer h4 {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: snow;
 }
 
 @media screen and (max-width: 900px) {
@@ -193,6 +304,11 @@
     position: relative;
  }
 
+ /*.mission {
+    width: auto;
+    font-size: 2.5rem;
+ };*/
+
  .section-about {
     display: block;
  }
@@ -200,7 +316,19 @@
     width: 100%;
     margin-bottom: 3%;
  }
+ .section-jobs {
+    padding-top: 10%;
+    padding-bottom: 20%;
+ }
 
+ .section-forum {
+    justify-content: space-between;
+    padding-left: 5%;
+ }
+
+ .forum-container {
+    padding-top: 10%;
+ }
 
 
 @media screen and (max-width: 600px) { 
@@ -209,6 +337,7 @@
         background-color: rgb(51, 51, 61);
     }
     .header {
+    
         padding-top: 6%;
         padding-bottom: 6%; 
     }
@@ -232,9 +361,13 @@
         background-blend-mode: soft-light;
     }
     .mission {
-        width: 310px;
-        margin-top: 7%; /*5% original*/
-        font-size: 3rem;
+        width: 250px; 
+        margin-top: 7%; 
+        font-size: 2.5rem;
+        color: ghostwhite;
+    }
+
+    .goals {
         color: ghostwhite;
     }
     .job-news-btn {
@@ -242,13 +375,11 @@
         padding: 4%;
     }
 
-    .section-about {
-        display: block;
-    }
     .cards {
         padding-top: 7%;
         margin-right: 2%;
     }
 
     }
+
 }

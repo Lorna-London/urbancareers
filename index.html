@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uc</title>
+    <title>Urban Careers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="#">
 </head>
 <body class="body">
     <header class="header">
@@ -26,7 +27,7 @@
       </nav>  
     </header>   
     <main class="main" class="main-img">
-      <h1 class="mission">Achieve Your Career Goals</h1>
+      <h1 class="mission">Achieve Your Career <span class="goals">Goals</span></h1>
       <button class="job-news-btn">Latest Job News</button>
     </main>
     <section class="section-about">
@@ -46,22 +47,61 @@
           <p>Browse books, articles and labour market information</p>
         </div>
       </section>
-
+  
     <section class="section-jobs">
-      <div class="jobs-container">search</div>
-      <div class="jobs-container">adverts</div>
-      <div class="jobs-container">results</div>
-      <div class="jobs-container">adverts</div>
+      <div class="section-jobs-container adverts">
+        <h3>Advertisement</h3>
+        <i class="fa-solid fa-rectangle-ad advert-icon"></i>
+        <p>Unlock Your Career Potential with Us! 🚀 Join a dynamic team where innovation meets passion. We're hiring creative minds, strategic thinkers, and problem solvers.</p>
+      </div>
+      <div class="section-jobs-container jobs">
+        <h3>Search Jobs</h3>
+        <form>
+          <p><label for="job-title">Job Title</label></p>
+          <p><input type="text" class="job-title" name="job-title" placeholder="Search jobs"><i class="fa-solid fa-magnifying-glass search-icon"></i></p>
+          <p><label for="location">Location</label></p>
+          <p><input type="text" class="location" name="location" placeholder="Location"></p>
+        </form>
+        
+      </div>   
+    </section>
+
+    <section class="section-interviews">
+      <div class="interviews-container">
+
+      </div>
     </section>
 
     <section class="section-forum">
-      <div class="forum-container">category</div>
-      <div class="forum-container">form</div>
-      <div class="forum-container">articles</div>
+      <div class="forum-container">
+        <h3>Forums</h3>
+        <ul class="forum-categories">
+          <li>Jobs</li> 
+          <li>Applications</li>
+          <li>Interviews</li>
+           <li>Chatroom</li>
+           <li></li>
+        </ul>
+      </div>
+      <div class="forum-container">
+        <h3>Chat securely</h3>
+        <button class="sign-in-btn">Sign in</button>
+      
+      </div>
+      <div class="forum-container">
+        <h3>Books</h3>
+     <ul class="articles">
+        <li><a href="">The Career Change Handbook</a></li>
+        <li><a href="">10-minute Guide to Job Interviews</a></li>
+        <li><a href="">Readymade CVs</a></li>
+        <li><a href="">5 Steps to Rapid Employment</a></li>
+     </ul>   
+      </div>
     </section>
    
-    <footer class="footer">footer</footer>
-
+    <footer class="footer">
+      <h4>@copyright 2024 Lorna London</h4>
+    </footer>
 
 <script src="script.js"></script>
 </body>
