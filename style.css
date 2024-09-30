@@ -31,7 +31,7 @@
 }
 
 .container {
-    width: 65%;
+    width: 75%;
     height: auto;
     display: flex;
     align-items: center;
@@ -42,8 +42,12 @@
 }
 
 .logo-img {
-    width: 7rem;
+    width: 120px;
     height: auto;
+}
+
+.trademark-symbol {
+    font-size: 1.4rem;
 }
 
 .nav {
@@ -205,24 +209,28 @@
 
 .advert-icon {
     font-size: 12rem;    
-    color: black;
+    color: rgb(51, 51, 61);
 }
 
 .section-jobs div:nth-of-type(2) {
     width: auto;
     height: auto;
-    background-color: rgb(51, 51, 61); /*aliceblue*/
-    color: whitesmoke;
+    background-color: aliceblue;
+    color: rgb(51, 51, 61);
 }
 
-.section-interviews {
+.job-results {
+    padding: 5%;
+}
+
+.section-application {
     height: auto;
+    grid-column: span 6;
     background-color: seashell;
 }
 
-.interviews-container {
+.application-container {
     height: 100vh;
-    
 }
 
 .section-forum {
