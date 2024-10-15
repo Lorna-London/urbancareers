@@ -37,7 +37,15 @@
     align-items: center;
 }
 
+.logo-Wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-text {
+    margin-top: -1%;
     font-size: 2rem;
 }
 
@@ -350,9 +358,10 @@
         padding-bottom: 6%; 
     }
     .logo-img {
-        width: 4rem;
+        width: 5.5rem;
     }
     .logo-text {
+        margin-top: -2.5%;
         font-size: 1.5rem;
     }
     .nav ul {
