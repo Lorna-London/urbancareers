@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     --padding: 3%;
+    text-decoration: none;
 }
 
 .body {
@@ -117,6 +118,10 @@
     font-size: 1.2rem;
     font-weight: bold;
     opacity: 0.8;
+}
+
+.job-news-link {
+    color: black;
 }
 
 .section-about {
